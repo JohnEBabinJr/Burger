@@ -1,7 +1,9 @@
 li {
   padding: 5px;
   margin: 5px;
-  background: #faebd7;
+  background:blue;
+  color: aliceblue;
+  width: 150px;
 }
 
 .label {
@@ -16,4 +18,21 @@ li {
 
 .form-group {
   margin-bottom: 5px;
+}
+.ready{
+  float: left;
+}
+.eaten{
+  float:right;
+}
+.container{
+  text-align: center;
+}
+.burger-adder{
+  clear: both;
+  width: 100%;
+  display: inline-block;
+}
+h1{
+  display: inline-block;
 }

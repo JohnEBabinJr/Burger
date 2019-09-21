@@ -1,6 +1,8 @@
-<h1>Burgers</h1>
-
-<h2>Available</h2>
+<div class="container">
+<h1>John's Burgers</h1>
+</div>
+<div class="ready">
+<h2>Ready to Eat</h2>
 
 <ul>
   {{#each burgers}}
@@ -9,7 +11,8 @@
   {{/unless}}
   {{/each}}
 </ul>
-
+</div>
+<div class="eaten">
 <h2>Eaten</h2>
 
 <ul>
@@ -19,14 +22,17 @@
   {{/if}}
   {{/each}}
 </ul>
-
-<h2>Add A Burger</h2>
-
+</div>
+<div class="container">
+<div class="burger-adder">
+<h2>Add A New Burger to the Menu</h2>
 <div class="row">
   <div class="col s12">
     <form action="/api/burgers" method="POST">
-      <input type="text" name="burger_name" placeholder="BORGER">
+      <input type="text" name="burger_name" placeholder="Burger">
       <button type="submit" class="addBurgerButton">Add The Burger</button>
     </form>
   </div>
+</div>
+</div>
 </div>
