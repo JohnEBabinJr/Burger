@@ -1,0 +1,13 @@
+<li>
+	{{#if eaten}}
+	{{burger_name}}
+	{{else}}
+	{{burger_name}}
+	<form action="/api/burgers/{{id}}?_method=PUT" method="POST">
+		<button class="" data-id="{{id}}" type="submit">
+			{{#if eaten}}ALREADY EATEN{{else}}READY TO EAT{{/if}}
+		</button>
+	</form>
+	{{/if}}
+
+</li>
